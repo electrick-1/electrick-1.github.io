@@ -1,0 +1,1322 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Regular.eot');
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url('./fonts/Merriweather/Merriweather-Regular.woff2') format('woff2'), url('./fonts/Merriweather/Merriweather-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GolosText';
+  src: url('GolosText-Regular.eot');
+  src: local('GolosText Regular'), local('GolosText-Regular'), url('./fonts/GolosText/GolosText-Regular.woff2') format('woff2'), url('./fonts/GolosText/GolosText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather;
+  box-sizing: border-box;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0 72px;
+}
+
+.header {
+  position: relative;
+  height: 700px;
+}
+
+.header-background__color {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-color: #E9DED4;
+}
+
+.header-background__img {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/background.png);
+  background-size: auto 700px;
+  mix-blend-mode: color-burn;
+}
+
+.header-background__image--mix {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.header-background__image {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+}
+
+.header-background__image--crl {
+  isolation: isolate;
+}
+
+.header-background__image--circle {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/circle.png);
+  background-position: calc(50% + 320px) 0px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--text {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/text.png);
+  background-position: calc(50% + 320px) 0px;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+}
+
+.header-background__image--c {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+}
+
+.header-background__image--chess1 {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/chess1.png);
+  background-size: auto 266px;
+  background-position: calc(50% + 450px) 165px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--chess2 {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/chess2.png);
+  background-size: auto 266px;
+  background-position: calc(50% + 110px) 270px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--city {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/city.png);
+  background-size: auto 430px;
+  background-position: calc(50% + 12px) 270px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--path {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/path.png);
+  background-size: auto 441px;
+  background-position: calc(50% - 1px) 259px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--chess3 {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/chess3.png);
+  background-size: auto 218px;
+  background-position: calc(50% + 250px) 482px;
+  background-repeat: no-repeat;
+}
+
+.header-background__image--chess4 {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  background-image: url(img/header/chess4.png);
+  background-size: auto 123px;
+  background-position: calc(50% + 596px) 558px;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.header__logo {
+  margin: 26px 0 0 -5px;
+  width: 255px;
+  height: 37px;
+}
+
+.header__title {
+  margin: 61px 0 0;
+  width: 542px;
+  font-family: Merriweather;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #313131;
+}
+
+.header__title p {
+  padding: 0;
+  margin: 0;
+}
+
+.header__title--first {
+  text-align: left;
+}
+
+.header__title--second {
+  text-align: center;
+}
+
+.header__title--third {
+  text-align: right;
+}
+
+.header__description {
+  width: 542px;
+  margin: 24px 0 0;
+  font-family: GolosText;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
+  color: #313131;
+}
+
+.header__buttons {
+  margin: 40px 0 0;
+  width: 542px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__buttons button {
+  width: 263px;
+  height: 72px;
+  border: 2px solid #1f1f1f;
+  border-radius: 66px;
+  padding: 10px 45px;
+  font-family: GolosText;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__buttons--support {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+
+.header__buttons--support:hover {
+  color: #1f1f1f;
+  background-color: #FBCE51;
+  border-color: #FBCE51;
+}
+
+.header__buttons--tournament {
+  color: #1f1f1f;
+  background-color: transparent;
+}
+
+.header__buttons--tournament:hover {
+  color: #ffffff;
+  background-color: #1f1f1f;
+}
+
+.support {
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.support__image--wrapper {
+  margin: 0 0 0 0;
+  width: 394px;
+  height: 250px;
+  background-image: url(img/background_support.png);
+  background-size: 394px 250px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.support__image {
+  border-radius: 50%;
+  width: 394px;
+  height: 250px;
+  mix-blend-mode: multiply;
+}
+
+.support__title {
+  margin-top: 28px;
+  width: 764px;
+  font-family: Merriweather;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48.6px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tournament {
+  margin-top: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tournament-background__image--wrapper {
+  position: relative;
+  margin-top: 48px;
+  width: 474px;
+  height: 528px;
+}
+
+.tournament-background__image--cooper {
+  position: absolute;
+  top: 20px;
+  left: 23px;
+  background-repeat: no-repeat;
+  width: 406px;
+  height: 438px;
+  background-image: url(img/tournament/cooper_background.png);
+  background-size: auto 438px;
+  opacity: 80%;
+}
+
+.tournament-background__image--rub {
+  position: absolute;
+  top: 3px;
+  left: 352px;
+  background-repeat: no-repeat;
+  width: 122px;
+  height: 242px;
+  background-image: url(img/tournament/10000_rub.png);
+  background-size: auto 242px;
+}
+
+.tournament-background__image--yellow1 {
+  position: absolute;
+  top: -47px;
+  left: -28px;
+  background-repeat: no-repeat;
+  width: 530px;
+  height: 344px;
+  background-image: url(img/tournament/back_yellow1.png);
+  background-size: auto 344px;
+}
+
+.tournament-background__image--man {
+  position: absolute;
+  top: 74px;
+  left: 80px;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 331px;
+  background-image: url(img/tournament/man.png);
+  background-size: auto 331px;
+}
+
+.tournament-background__image--yellow2 {
+  position: absolute;
+  top: 279px;
+  left: -14px;
+  background-repeat: no-repeat;
+  width: 245px;
+  height: 214px;
+  background-image: url(img/tournament/back_yellow2.png);
+  background-size: auto 214px;
+}
+
+.tournament-background__image--chess {
+  position: absolute;
+  top: 335px;
+  left: 63px;
+  background-repeat: no-repeat;
+  width: 158px;
+  height: 173px;
+  background-image: url(img/tournament/chess.png);
+  background-size: auto 173px;
+}
+
+.tournament-background__image--hand {
+  position: absolute;
+  top: 312px;
+  left: 193px;
+  background-repeat: no-repeat;
+  width: 285px;
+  height: 293px;
+  background-image: url(img/tournament/hand.png);
+  background-size: auto 293px;
+}
+
+.tournament-background__image--path {
+  position: absolute;
+  top: 69px;
+  left: 75px;
+  background-repeat: no-repeat;
+  width: 339px;
+  height: 341px;
+  background-image: url(img/tournament/path.png);
+  background-size: auto 341px;
+}
+
+.tournament__description {
+  margin: 0 0 0 auto;
+}
+
+.tournament__title {
+  width: 700px;
+  font-family: Merriweather;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48.6px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tournament__table {
+  margin-top: 60px;
+  width: 704px;
+  position: relative;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.tournament__table::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 305px;
+  width: 0;
+  height: 248px;
+  border: 1px solid #D0D0D0;
+}
+
+.tournament__table p {
+  position: relative;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tournament__table p:not(:first-of-type)::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 704px;
+  height: 0;
+  border: 1px solid #D0D0D0;
+}
+
+.tournament__table span {
+  width: 290px;
+  text-align: left;
+}
+
+span.tournament__table--bold {
+  font-weight: 600;
+  width: 382px;
+  margin: 0 0 0 auto;
+}
+
+.tournament__table--crossed {
+  margin-right: 10px;
+  position: relative;
+  width: 82px;
+}
+
+.tournament__table--crossed::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 75px;
+  height: 0;
+  border: 1px solid #F54932;
+}
+
+.tournament__contacts {
+  margin-top: 48px;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #3057A2;
+}
+
+.stages {
+  position: relative;
+  margin-top: 135px;
+}
+
+.stages::after {
+  content: "";
+  background-image: url(img/airplane.png);
+  background-size: 400px auto;
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  top: 385px;
+  left: 955px;
+  transform: rotate(3deg);
+}
+
+.stages__title {
+  display: inline-block;
+  width: 806px;
+  font-family: Merriweather;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.stages__description {
+  margin-left: -509px;
+  display: inline-block;
+  width: 280px;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #3057A2;
+}
+
+.stages__points {
+  width: 1222px;
+  margin-top: 10px
+}
+
+.stages__background {
+  display: none;
+}
+
+.stages__block {
+  position: relative;
+  display: inline-block;
+}
+
+.stages__block--1 {
+  float: left;
+}
+
+.stages__block--2 {
+  float: right;
+}
+
+.stages__block--3 {
+  float: left;
+}
+
+.stages__block--4 {
+  float: left;
+}
+
+.stages__block--5 {
+  float: right;
+}
+
+.stages__point {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 72px;
+  margin-right: 17px;
+  margin-bottom: 21px;
+  width: 394px;
+  height: 111px;
+  background-image: url(img/Cooper_Paper.png);
+  background-repeat: repeat;
+}
+
+.stages__point--1 {
+  float: left;
+  margin-right: 20px;
+}
+
+.stages__point--3 {
+  margin-right: 0;
+  height: 242px;
+}
+
+.stages__point--4 {
+  float: left;
+  margin-right: 20px;
+}
+
+.stages__point--5 {
+  padding-right: 40px;
+}
+
+.stages__point--6 {
+  height: 136px;
+}
+
+.stages__point--7 {
+  margin-right: 0;
+  height: 136px;
+  width: 808px;
+  padding: 20px 290px 20px 72px;
+}
+
+.stages__point--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 394px;
+  height: 111px;
+  mix-blend-mode: color-burn;
+}
+
+.stages__point--3 .stages__point--image {
+  height: 242px;
+}
+
+.stages__point--6 .stages__point--image {
+  height: 136px;
+}
+
+.stages__point--7 .stages__point--image {
+  height: 136px;
+  width: 808px;
+}
+
+.stages__point--number {
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  padding: 6px 10px 6px 12px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.stages__point--text {
+  margin: 0;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.stages__switcher {
+  display: none;
+}
+
+.participants {
+  position: relative;
+  margin-top: 610px;
+}
+
+.participants__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.participants__title {
+  margin: 0;
+  display: inline-block;
+  font-family: Merriweather;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.participants__switcher {
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.participants__pages {
+  width: 63px;
+  text-align: center;
+  padding-top: 11px;
+  font-family: GolosText;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  gap: 1px;
+}
+
+.participants__arrow {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #1f1f1f;
+  border: 1px solid #1f1f1f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.participants__arrow:hover {
+  background-color: #FBCE51;
+  border-color: #FBCE51;
+}
+
+.participants__arrow:disabled {
+  background-color: #D6D6D6;
+  border-color: #D6D6D6;
+  cursor: auto;
+}
+
+.participants__arrow img {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+.participants__arrow--right img {
+  transform: rotate(180deg);
+  left: 17px;
+}
+
+.participants__list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.participants__slider {
+  padding-bottom: 140px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  left: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.participants__element {
+  display: block;
+  padding: 20px 23px 0 1px;
+}
+
+.participants__element img {
+  margin: 40px 35px 0;
+}
+
+.participants__element-title {
+  margin: 24px 0 0;
+  font-family: GolosText;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.participants__description {
+  margin: 5px 0 0;
+  font-family: GolosText;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.participants__link {
+  margin: 20px auto 0;
+  padding: 6px 12px 10px 9px;
+  box-sizing: border-box;
+  display: block;
+  width: 113px;
+  height: 35px;
+  border: 1px solid #3057A2;
+  border-radius: 62px;
+  color: #3057A2;
+  text-decoration: none;
+}
+
+.participants__link:hover {
+  background-color: #3057A2;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 0px;
+  background-color: #E9DED4;
+}
+
+.footer__wrapper {
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 72px;
+  font-family: GolosText;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #313131;
+}
+
+.ticker {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #F54932;
+}
+
+.ticker p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Merriweather;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ticker__dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: auto 5px 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  white-space: nowrap;
+}
+
+.text__color--red {
+  color: #F54932;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .header,
+  .header-background__color,
+  .header-background__img,
+  .header-background__image--mix,
+  .header-background__image,
+  .header-background__image--circle,
+  .header-background__image--text,
+  .header-background__image--c,
+  .header-background__image--chess1,
+  .header-background__image--chess2,
+  .header-background__image--city,
+  .header-background__image--path,
+  .header-background__image--chess3,
+  .header-background__image--chess4 {
+    height: 774px;
+  }
+
+  .header-background__image--circle {
+    background-image: url(img/mobile/circle.png);
+    background-position: 50% 410px;
+  }
+
+  .header-background__image--text {
+    background-image: url(img/mobile/text.png);
+    background-position: 50% 382px;
+  }
+
+  .header-background__image--chess1 {
+    background-size: auto 110px;
+    background-position: calc(50% + 99px) 489px;
+    transform: rotate(7deg);
+  }
+
+  .header-background__image--chess2 {
+    background-size: auto 122px;
+    background-position: calc(50% - 87px) 541px;
+  }
+
+  .header-background__image--city {
+    background-size: auto 237px;
+    background-position: calc(50% - 138px) 537px;
+  }
+
+  .header-background__image--path {
+    background-size: auto 240px;
+    background-position: calc(50% - 145px) 532px;
+  }
+
+  .header-background__image--chess3 {
+    background-image: url(img/mobile/chess3.png);
+    background-size: auto 135px;
+    background-position: calc(50% + 16px) 660px;
+  }
+
+  .header-background__image--chess4 {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 18px 0 0;
+    width: 213px;
+    height: 32px;
+  }
+
+  .header__title {
+    margin: 40px 0 0;
+    width: 335px;
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .header__description {
+    width: 335px;
+    margin: 26px 0 0;
+    text-align: left;
+  }
+
+  .header__buttons {
+    margin: 30px 0 0;
+    width: 335px;
+    flex-direction: column;
+  }
+
+  .header__buttons button {
+    width: 335px;
+    height: auto;
+    border-radius: 66px;
+    padding: 11px 40px;
+  }
+
+  .header__buttons--support {
+    margin-bottom: 14px;
+  }
+
+  .header__buttons--tournament {
+    background-color: #fff;
+    opacity: 90%;
+  }
+
+  .support {
+    margin-top: 22px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .support__title {
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .support__text-wrapper {
+    display: block;
+    margin-top: 262px;
+  }
+
+  .support__image--wrapper {
+    position: absolute;
+    top: 202px;
+    width: 335px;
+    height: 212px;
+    background-size: 335px 212px;
+  }
+
+  .support__image {
+    width: 335px;
+    height: 212px;
+  }
+
+  .tournament {
+    margin-top: 33px;
+  }
+
+  .tournament-background__image--cooper {
+    top: -24px;
+    left: 15px;
+    background-size: 287px 309px;
+  }
+
+  .tournament-background__image--rub {
+    top: -36px;
+    left: 249px;
+    background-size: auto 170px;
+  }
+
+  .tournament-background__image--yellow1 {
+    top: -71px;
+    left: -20px;
+    background-size: auto 243px;
+  }
+
+  .tournament-background__image--man {
+    top: 14px;
+    left: 56px;
+    background-size: auto 234px;
+  }
+
+  .tournament-background__image--yellow2 {
+    top: 159px;
+    left: -10px;
+    background-size: auto 151px;
+  }
+
+  .tournament-background__image--chess {
+    top: 199px;
+    left: 45px;
+    background-size: auto 121px;
+  }
+
+  .tournament-background__image--hand {
+    top: 182px;
+    left: 137px;
+    background-size: auto 207px;
+  }
+
+  .tournament-background__image--path {
+    top: 11px;
+    left: 53px;
+    width: 239px;
+    height: 241px;
+    background-size: auto 241px;
+  }
+
+  .tournament__description {
+    margin: 380px 0 0 auto;
+  }
+
+  .tournament__title {
+    width: 335px;
+    font-family: Merriweather;
+    font-size: 28px;
+    line-height: 37.8px;
+  }
+
+  .tournament__table {
+    margin-top: 43px;
+    width: 335px;
+  }
+
+  .tournament__table::before {
+    display: none;
+  }
+
+  .tournament__table p {
+    flex-direction: column;
+  }
+
+  .tournament__table p:not(:first-of-type)::after {
+    top: -16px;
+    width: 335px;
+  }
+
+  span.tournament__table--bold {
+    width: 375px;
+    margin: 12px 0 0 auto;
+  }
+
+  p.tournament__table--price {
+    flex-direction: row;
+  }
+
+  p.tournament__table--price .tournament__table--bold {
+    margin: 0 auto 0 12px;
+  }
+
+  .tournament__table--crossed::before {
+    top: 14px;
+    width: 87px;
+  }
+
+  .tournament__contacts {
+    margin-top: 42px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .stages {
+    margin-top: 104px;
+  }
+
+  .stages::after {
+    background-size: 342px auto;
+    width: 342px;
+    height: 188px;
+    top: 180px;
+    left: 28px;
+    transform: rotate(0deg);
+  }
+
+  .stages__title {
+    margin: 0;
+    width: 335px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 39.6px;
+  }
+
+  .stages__description {
+    margin-left: 0px;
+    margin-top: 12px;
+    width: 335px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .stages__points {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .stages__slider {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    left: 0;
+    transition: 0.2s ease-in-out;
+  }
+
+  .stages__block {
+    height: 300px;
+    padding-top: 43px;
+    margin-right: 25px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    background-image: url(img/mobile/background_stages.png);
+  }
+
+  .stages__background {
+    display: block;
+    width: 335px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url(img/mobile/Cooper_stages.png);
+    opacity: 80%;
+
+  }
+
+  .stages__point {
+    padding: 20px 20px 10px 72px;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 335px;
+    height: auto;
+    background-image: none;
+  }
+
+  .stages__point--image {
+    display: none;
+  }
+
+  .stages__point--text {
+    font-size: 18px;
+    line-height: 21.6px;
+
+  }
+
+
+  .stages__switcher {
+    width: 178px;
+    height: 36px;
+    margin: 28px 78px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .stages__switcher-dots {
+    width: 74px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .stages__switcher-dot {
+    padding: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #313131;
+    border: 1px solid #313131;
+  }
+
+  .stages__switcher-dot:hover {
+    background-color: #FBCE51;
+    border-color: #FBCE51;
+  }
+
+  .stages__switcher-dot:disabled {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+  }
+
+  .stages__arrow {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-color: #313131;
+    border: 1px solid #313131;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .stages__arrow:hover {
+    background-color: #FBCE51;
+    border-color: #FBCE51;
+  }
+
+  .stages__arrow:disabled {
+    background-color: #D6D6D6;
+    border-color: #D6D6D6;
+    cursor: auto;
+  }
+
+  .stages__arrow img {
+    height: 16px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
+
+  .stages__arrow--right img {
+    transform: rotate(180deg);
+    left: 14px;
+  }
+
+  .participants {
+    margin-top: 121px;
+  }
+
+  .participants__title {
+    font-size: 36px;
+    line-height: 39.6px;
+  }
+
+  .participants__switcher {
+    position: absolute;
+    top: 547px;
+    left: 123px;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .participants__pages {
+    width: 57px;
+    padding-top: 9px;
+  }
+
+  .participants__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .participants__arrow img {
+    height: 16px;
+    top: 9px;
+    left: 10px;
+  }
+
+  .participants__arrow--right img {
+    left: 14px;
+  }
+
+  .participants__slider {
+    padding-bottom: 178px;
+  }
+
+  .participants__element {
+    padding: 0 20px 0 5px;
+  }
+
+  .participants__element img {
+    margin: 40px 40px 0;
+    width: 244px;
+    height: 244px;
+  }
+  
+  .participants__description {
+    margin: 7px 0 0;
+  }
+  
+  .participants__link {
+    margin: 20px auto 0;
+    padding: 7px 11px 9px 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 113px;
+    height: 35px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    color: #3057A2;
+    text-decoration: none;
+  }
+
+  div.footer__wrapper {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .ticker {
+    height: 38px;
+    padding: 10px;
+  }
+
+  .ticker p {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+}
