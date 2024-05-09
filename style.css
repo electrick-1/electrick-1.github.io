@@ -1107,6 +1107,7 @@ span.tournament__table--bold {
   }
 
   .stages__points {
+    width: 335px;
     margin-top: 130px;
     display: flex;
     flex-direction: row;
